@@ -52,7 +52,7 @@ main {
 
 @keyframes pulseMotion {
   0% {
-    transform: translate(-50%, -50%) scale(2, 2);
+    transform: translate(-50%, -50%) scale(1, 1);
     background-color: rgba(66, 165, 245, 0.4)
   }
   100% {
@@ -87,5 +87,5 @@ main {
 }
 
 .motion.-active:after {
-	animation: pulseMotion 1.2s linear infinite;
+	animation: pulseMotion 1.4s linear infinite;
 }

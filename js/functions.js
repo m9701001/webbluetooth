@@ -10,6 +10,8 @@ function startDeviceScanner() {
 	initDeviceData();
 
 //--↓debug
+window.alert('TEST');
+
     const disp = document.getElementById("resultDisp");
 
     //デバイスを表示する
