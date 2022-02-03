@@ -9,6 +9,7 @@ function startDeviceScanner() {
 	//デバイス表示領域を初期化する
 	initDeviceData();
 
+/*
 //--↓debug
     const disp = document.getElementById("resultDisp");
 
@@ -61,6 +62,7 @@ function startDeviceScanner() {
 	
 //	return;
 //--↑debug
+*/
 window.alert('a');
 
 	//Bluetoothデバイスをスキャンする
@@ -108,7 +110,7 @@ function dispDeviceData(deviceData) {
 		//表示する情報を編集する
 		let	deviceHTML = "";
 		deviceHTML +=  '<div id=' + deviceData.id + ' class="card-panel blue lighten-4">';
-		deviceHTML += '<span class="light-blue-text text-darken-3">' + deviceData.id + ' ' + deviceData.name + '</span>';
+		deviceHTML += '<span class="light-blue-text text-darken-3">DeviceID=' + deviceData.id + ' DeviceName=' + deviceData.name + '</span>';
 		deviceHTML += '</div>';
 
 		//編集した情報を表示する
