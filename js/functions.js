@@ -10,8 +10,6 @@ function startDeviceScanner() {
 	initDeviceData();
 
 //--↓debug
-window.alert('DEBUG');
-
     const disp = document.getElementById("resultDisp");
 
     //デバイスを表示する
@@ -61,14 +59,16 @@ window.alert('DEBUG');
 
     }
 	
-	return;
+//	return;
 //--↑debug
+window.alert('a');
 
 	//Bluetoothデバイスをスキャンする
     navigator.bluetooth.requestLEScan(SCAN_OPTIONS)
         .then(scanner => {
 
             console.log(scanner.active);
+window.alert('b');
 
             navigator.bluetooth.addEventListener('advertisementreceived', event => {
 
@@ -81,7 +81,7 @@ window.alert('DEBUG');
             });
 
     })
-        .catch(error => { console.log(error); });
+        .catch(error => { console.log(error); window.alert(error); });
 
 }
 
