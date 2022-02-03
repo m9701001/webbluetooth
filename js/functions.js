@@ -10,7 +10,7 @@ function startDeviceScanner() {
 	initDeviceData();
 
 //--↓debug
-window.alert('TEST');
+window.alert('DEBUG');
 
     const disp = document.getElementById("resultDisp");
 
